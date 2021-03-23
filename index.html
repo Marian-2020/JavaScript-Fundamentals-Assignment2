@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectuarea operațiilor aritmetice de bază</title>
+</head>
+
+<body>
+    <!-- 
+        Assignment - Programul pentru efectuarea operațiilor aritmetice de bază
+     -->
+
+    <script>
+        //efectuarea operațiilor aritmetice de bază
+        var numbers = {
+            numberOne: prompt("Introduceți primul număr: "),
+            operator: prompt("Introduceți unul dintre operatorii de adunare( + ), scădere ( - ), înmulțire( * ) sau împărțire( / ): "),
+            numberTwo: prompt("Introduceți al doilea număr: "),
+        }
+
+        var suma = (numbers.numberOne * 10 + numbers.numberTwo * 10) / 10;
+        var diferența = (numbers.numberOne * 10 - numbers.numberTwo * 10) / 10;
+        var produs = numbers.numberOne * numbers.numberTwo;
+        var cât = numbers.numberOne / numbers.numberTwo;
+
+        if (numbers.operator == "+") {
+            document.write("Rezultatul adunării este: " + suma);
+        } else if (numbers.operator == "-") {
+            document.write("Rezultatul scăderii este: " + diferența);
+        } else if (numbers.operator == "*") {
+            document.write("Rezultatul înmulțirii este: " + produs);
+        } else if (numbers.operator == "/") {
+            document.write("Rezultatul împărțirii este: " + cât);
+        } else {
+            document.write("Datele introduse sunt incorecte. ");
+        }
+
+    </script>
+
+
+    <!-- <script>
+        
+        var x = prompt("Introduceți primul număr: ")
+        var operator = prompt("Introduceți unul dintre operatorii de adunare( + ), scădere ( - ),înmulțire( * ) sau împărțire( / ): ")
+        var y = prompt("Introduceți al doilea număr: ")
+
+        var suma = (x *10 + y*10) / 10 ;
+        var diferența = (x*10  - y*10) / 10;
+        var produs = x  * y;
+        var cât = x  / y;
+
+        if (operator == "+") {
+            document.write("Rezultatul adunării este: " + suma );
+        } else if (operator == "-") {
+            document.write("Rezultatul scăderii este: " + diferența);
+        }else if (operator == "*") {
+            document.write("Rezultatul înmulțirii este: " + produs);
+        }else if (operator == "/") {
+            document.write("Rezultatul împărțirii este: " + cât);
+        }else{
+            document.write("Datele introduse sunt incorecte. ");
+        }
+
+    </script> -->
+
+
+
+</body>
+
+</html>
